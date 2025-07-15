@@ -1,5 +1,0 @@
-return {
-  {
-    "nordtheme/vim",
-  },
-}

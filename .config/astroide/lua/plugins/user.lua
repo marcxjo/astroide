@@ -85,5 +85,4 @@ return {
       table.insert(opts.adapters, require "neotest-dotnet")
     end,
   },
-  "nordtheme/vim",
 }
