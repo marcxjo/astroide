@@ -15,7 +15,7 @@ return {
       },
     },
     style = {
-      transparent = false,
+      transparent = true,
     },
     -- Icons can be configured throughout the interface
     icons = {
