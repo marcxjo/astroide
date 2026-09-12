@@ -15,9 +15,11 @@ return {
   -- customize alpha options
   {
     "goolord/alpha-nvim",
-    opts = function(_, opts)
+    config = function()
+      local alpha = require "alpha"
+      local dashboard = require "alpha.themes.dashboard"
       -- customize the dashboard header
-      opts.section.header.val = {
+      dashboard.section.header.val = {
         " █████  ███████ ████████ ██████   ██████",
         "██   ██ ██         ██    ██   ██ ██    ██",
         "███████ ███████    ██    ██████  ██    ██",
@@ -30,7 +32,7 @@ return {
         "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
         "    ██   ████   ████   ██ ██      ██",
       }
-      return opts
+      alpha.setup(dashboard.config)
     end,
   },
 
